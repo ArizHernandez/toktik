@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
         title: 'TokTik',
         debugShowCheckedModeBanner: false,
         theme: AppTheme().getTheme(),
-        home: const DiscoverScreen(),
+        home: const SafeArea(
+          child: DiscoverScreen(),
+        ),
       ),
     );
   }
